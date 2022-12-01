@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h3 {
+    font-family: 'Secular One', sans-serif;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+
+h3,
+p {
+    font-size: 1.125rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.75rem;
+    letter-spacing: .4rem;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: #FFD029;
+    letter-spacing: 1rem;
+    margin-top: .3rem;
+}
+
+h3 {
+    margin-bottom: .1rem;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-top: 0;
+    opacity: .8;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.show {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#pageOne {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(to right, #0C164D, #190B22);
+}
+
+.pageOne__sun {
+    position: absolute;
+    width: 50%;
+    height: 130%;
+    background-color: #FFD029;
+    border-radius: 100%;
+    left: -43%;
+}
+
+.pageOne__topicWrapper {
+    position: absolute;
+    width: 700px;
+    height: auto;
+    top: 5rem;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pageOne__planetsWrapper {
+    width: 85%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.planet:hover {
+    filter: opacity(50%);
+    cursor: pointer;
+}
+
+/* ----------------
+       PAGE TWO
+   ----------------*/
+
+
+#pageTwo {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #172781, #190B22);
+}
+
+.pageTwo__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageTwo__planet,
+.pageTwo__planetShadowInner,
+.pageTwo__planetShadowOuter {
+    position: absolute;
+    width: 50%;
+    height: 130%;
+    border-radius: 100%;
+    left: -43%;
+}
+
+.pageTwo__planetShadowInner {
+    left: -40%;
+}
+
+.pageTwo__planetShadowOuter {
+    left: -37%;
+}
+
+.pageTwo__planetNameLatin {
+    margin-bottom: 2rem;
+}
+
+.pageTwo__innerWrapper {
+    width: 35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageTwo__verticalLine {
+    border: solid 1px lightgray;
+    margin: .4rem 0 .7rem 0;
+    opacity: .1;
+}
+
+.pageTwo__midInfoWrapper {
+    display: flex;
+}
+
+.pageTwo__leftInfoBox {
+    flex-basis: 50%;
+}
+
+.pageTwo__rightInfoBox {
+    flex-basis: 50%;
+}
+
+/* FIXA MÅNARNA SÅ ATT DE DELAS UPP FRÅN ARRAYEN OCH SKRIVS UT KORREKT! */
